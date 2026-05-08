@@ -1,6 +1,6 @@
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=Camacho19212376/MSFPractica3)
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=Camacho19212376/MSFPractica4)
 
-# Práctica: Sistema musculoesqueletico
+# Práctica: Sistema endocrino
 
 ## Información de la estudiante
 
@@ -33,11 +33,11 @@ La asignatura de Modelado de Sistemas Fisiológicos forma parte del plan de estu
 
 ## Descripción detallada del sistema
 
-El símbolo F0 se utiliza para describir la fuerza generada por el componente activo contráctil del músculo, mientras que F(t) corresponde a la fuerza efectiva que se obtiene al considerar las características mecánicas del tejido muscular. Se establece que ambas están relacionadas mediante la expresión F0 = αF(t), donde 0 < α < 1. Por otra parte, R representa la resistencia viscosa propia del tejido, en tanto que Cp (elemento elástico en paralelo) y Cs (elemento elástico en serie) modelan la capacidad de almacenamiento de energía elástica del sarcolema y de los tendones, respectivamente.
+El sistema endócrino se modela mediante una analogía eléctrica representada por un circuito de segundo orden, donde la señal de entrada \( Ve(t) \) corresponde al estímulo fisiológico. La dinámica del sistema se describe a partir de dos corrientes, \( i_1(t) \) e \( i_2(t) \), asociadas al proceso de secreción/transporte hormonal y a la respuesta del órgano efector, respectivamente. La relación entre estas variables se establece mediante ecuaciones integro-diferenciales que consideran el comportamiento del capacitor y la inductancia.
 
-La disposición en paralelo se plantea con el fin de incluir las limitaciones mecánicas que afectan a los elementos del modelo. Cuando el resorte Cp experimenta un alargamiento de magnitud x(t), el conjunto en serie formado por R y Cs también se deforma en la misma proporción. Asimismo, la suma de las fuerzas que circulan por ambas ramas del arreglo en paralelo debe ser equivalente a F(t). Aunque la elongación total de Cs y R debe coincidir con x(t), cada uno de estos elementos no necesariamente contribuye en igual medida. Así, si se supone que Cs se extiende una cantidad x₁(t), entonces la deformación correspondiente en la rama paralela que incluye R será x(t) − x₁(t). La rapidez de deformación del amortiguador asociado a R se determina derivando la expresión x(t) − x₁(t) con respecto al tiempo, es decir, d[x(t) − x₁(t)]/dt.
+El circuito está compuesto por una resistencia \( R_1 \), un capacitor \( C \) y una rama con una inductancia \( L \) en serie con una resistencia \( R_2 \). El capacitor modela el almacenamiento hormonal a través de la diferencia de corrientes \( (i_1 - i_2) \), mientras que la inductancia introduce la dependencia temporal en la respuesta del sistema. La salida \( Vs(t) \) se define como el voltaje en la resistencia \( R_2 \), representando la respuesta hormonal del sistema ante el estímulo de entrada.
 
-Palabras clave: músculo, fuerza, resistencia, modelo, amortiguación.
+Palabras clave: Sistema endócrino, modelado matemático, circuito RLC, función de transferencia, sistemas dinámicos
 
 ## Lista de archivos incluidos en el repositorio
 
