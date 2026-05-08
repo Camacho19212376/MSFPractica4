@@ -33,9 +33,9 @@ La asignatura de Modelado de Sistemas Fisiológicos forma parte del plan de estu
 
 ## Descripción detallada del sistema
 
-El sistema endócrino se modela mediante una analogía eléctrica representada por un circuito de segundo orden, donde la señal de entrada \( Ve(t) \) corresponde al estímulo fisiológico. La dinámica del sistema se describe a partir de dos corrientes, \( i_1(t) \) e \( i_2(t) \), asociadas al proceso de secreción/transporte hormonal y a la respuesta del órgano efector, respectivamente. La relación entre estas variables se establece mediante ecuaciones integro-diferenciales que consideran el comportamiento del capacitor y la inductancia.
+El sistema endócrino se modela mediante una analogía eléctrica representada por un circuito de segundo orden, donde la señal de entrada Ve(t) corresponde al estímulo fisiológico. La dinámica del sistema se describe a partir de dos corrientes, i1(t) e i2(t), asociadas al proceso de secreción/transporte hormonal y a la respuesta del órgano efector, respectivamente. La relación entre estas variables se establece mediante ecuaciones integro-diferenciales que consideran el comportamiento del capacitor y la inductancia.
 
-El circuito está compuesto por una resistencia \( R_1 \), un capacitor \( C \) y una rama con una inductancia \( L \) en serie con una resistencia \( R_2 \). El capacitor modela el almacenamiento hormonal a través de la diferencia de corrientes \( (i_1 - i_2) \), mientras que la inductancia introduce la dependencia temporal en la respuesta del sistema. La salida \( Vs(t) \) se define como el voltaje en la resistencia \( R_2 \), representando la respuesta hormonal del sistema ante el estímulo de entrada.
+El circuito está compuesto por una resistencia R1, un capacitor C y una rama con una inductancia L en serie con una resistencia R2. El capacitor modela el almacenamiento hormonal a través de la diferencia de corrientes i1 - i2, mientras que la inductancia introduce la dependencia temporal en la respuesta del sistema. La salida Vs(t) se define como el voltaje en la resistencia R2, representando la respuesta hormonal del sistema ante el estímulo de entrada.
 
 Palabras clave: Sistema endócrino, modelado matemático, circuito RLC, función de transferencia, sistemas dinámicos
 
